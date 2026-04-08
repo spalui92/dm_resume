@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharmistha Palui — Editorial Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&family=Josefin+Sans:wght@100;300;400;600&family=Bodoni+Moda:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+
+/* ═══════════════════════════════════════════════════════
+   EDITORIAL MAGAZINE RESUME — Ogilvy Era, c.1960
+   Broadsheet grid · Heavy ink · Newsprint soul
+   Optimized for Manus High-Impact Resume Builder
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  --ink:       #0d0d0b;
+  --ink-faded: #2a2820;
+  --ink-light: #4a4840;
+  --paper:     #e8dcc8;
+  --paper-off: #ddd0b8;
+  --paper-dark:#c9bda8;
+  --rule:      #0d0d0b;
+  --red:       #b5201a;
+  --cream:     #f0e6d2;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #e8dcc8;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  padding: 40px 20px;
+}
+
+/* ───────────────────────────────────────────────────────
+   PAGE — broadsheet proportions
+─────────────────────────────────────────────────────── */
+.page {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  background: var(--paper);
+  position: relative;
+  /* newsprint grain */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23g)' opacity='0.055'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-off) 100%);
+  box-shadow: 0 20px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+/* ───────────────────────────────────────────────────────
+   TOP STRIP — edition bar
+─────────────────────────────────────────────────────── */
+.edition-strip {
+  border-bottom: 3px solid var(--ink);
+  padding: 12px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--cream);
+  position: relative;
+}
+.edition-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+.edition-price {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 2px 8px;
+}
+
+/* ───────────────────────────────────────────────────────
+   MASTHEAD
+─────────────────────────────────────────────────────── */
+.masthead {
+  padding: 28px 36px 0;
+  border-bottom: 4px double var(--ink);
+  background: var(--cream);
+}
+
+.masthead-top-rule {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 18px;
+}
+
+.masthead-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 18px;
+}
+
+.masthead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.issue-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 8px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 4px;
+}
+
+.masthead-vol {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-faded);
+  line-height: 1.4;
+}
+
+.masthead-category {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8.5px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+/* THE BIG NAME */
+.masthead-name {
+  text-align: center;
+}
+
+.name-fraktur {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 78px;
+  color: var(--ink);
+  line-height: 0.9;
+  display: block;
+  letter-spacing: -0.01em;
+}
+
+.name-subtitle {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 9.5px;
+  letter-spacing: 0.65em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 8px;
+  display: block;
+}
+
+.masthead-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.contact-list-mast {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cm-item {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faded);
+  text-transform: uppercase;
+}
+
+/* Kicker bar below masthead */
+.kicker-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 0 -36px;
+  border-top: 2px solid var(--ink);
+  background: var(--ink);
+}
+
+.kicker-seg {
+  flex: 1;
+  padding: 7px 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--paper);
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+.kicker-seg:last-child { border-right: none; }
+.kicker-seg strong {
+  font-weight: 600;
+  color: #fff;
+  margin-right: 5px;
+}
+
+/* ───────────────────────────────────────────────────────
+   DECK — large editorial intro
+─────────────────────────────────────────────────────── */
+.deck-section {
+  padding: 30px 36px 0;
+  border-bottom: 2px solid var(--ink);
+  display: grid;
+  grid-template-columns: 2fr 1px 1fr;
+  gap: 0;
+}
+
+.deck-rule { background: var(--ink); }
+
+.deck-main {
+  padding-right: 30px;
+  padding-bottom: 24px;
+}
+
+.deck-eyebrow {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.deck-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.0;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.deck-headline em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.deck-body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 13.5px;
+  line-height: 1.85;
+  color: var(--ink-faded);
+  columns: 2;
+  column-gap: 24px;
+  column-rule: 1px solid var(--paper-dark);
+}
+
+.deck-body p { margin-bottom: 1em; }
+.deck-body p:last-child { margin-bottom: 0; }
+
+/* drop cap */
+.deck-body p:first-child::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 0.75;
+  float: left;
+  margin: 6px 8px 0 0;
+  color: var(--ink);
+}
+
+.deck-sidebar {
+  padding-left: 28px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-kpi {
+  border-top: 3px solid var(--ink);
+  padding-top: 12px;
+}
+
+.kpi-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  display: block;
+}
+
+.kpi-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8.5px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 4px;
+  display: block;
+}
+
+.pull-quote {
+  border-left: 4px solid var(--red);
+  padding-left: 14px;
+  margin-top: 4px;
+}
+
+.pq-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.pq-attr {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-top: 8px;
+  display: block;
+}
+
+/* ───────────────────────────────────────────────────────
+   BODY — 5-column editorial grid
+─────────────────────────────────────────────────────── */
+.body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 2.2fr 1px 1.4fr;
+  gap: 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+.col-rule {
+  background: var(--ink);
+}
+
+/* LEFT NAV COLUMN */
+.left-nav {
+  padding: 28px 20px 28px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* MAIN FEATURE COLUMN */
+.main-feature {
+  padding: 28px 28px;
+  border: none;
+}
+
+/* RIGHT ASIDE COLUMN */
+.right-aside {
+  padding: 28px 36px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ───────────────────────────────────────────────────────
+   SECTION HEADS — newspaper style
+─────────────────────────────────────────────────────── */
+.sec-head {
+  border-top: 3px solid var(--ink);
+  padding-top: 8px;
+  margin-bottom: 14px;
+}
+
+.sec-head-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.sec-head-rule {
+  height: 1px;
+  background: var(--paper-dark);
+  margin-top: 6px;
+}
+
+/* ───────────────────────────────────────────────────────
+   TIMELINE — left column
+─────────────────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tl-entry {
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.tl-entry::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 22px; bottom: 0;
+  width: 1px;
+  background: var(--paper-dark);
+}
+
+.tl-entry:last-child::before { display: none; }
+
+.tl-year {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 4px;
+  padding-left: 10px;
+}
+
+.tl-role {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  padding-left: 10px;
+}
+
+.tl-org {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+/* Ethos pills */
+.ethos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ethos-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--paper-dark);
+}
+
+.ethos-item:last-child { border-bottom: none; }
+
+.ethos-initial {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 18px;
+}
+
+.ethos-trait {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.ethos-desc {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10.5px;
+  font-style: italic;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* Metrics in left col */
+.metric-box {
+  border: 2px solid var(--ink);
+  padding: 12px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: var(--cream);
+}
+
+.m-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+  display: block;
+}
+
+.m-label {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7.5px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 4px;
+  display: block;
+}
+
+/* ───────────────────────────────────────────────────────
+   EXPERIENCE ENTRIES — main column
+─────────────────────────────────────────────────────── */
+.exp-entry {
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--paper-dark);
+}
+
+.exp-entry:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.exp-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.exp-role {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.exp-date {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--red);
+  white-space: nowrap;
+}
+
+.exp-org {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 10px;
+}
+
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.exp-bullets li {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: var(--ink-faded);
+  padding-left: 16px;
+  position: relative;
+}
+
+.exp-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* Value props — advertorial boxes */
+.vp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.vp-card {
+  border: 1.5px solid var(--ink);
+  padding: 12px 12px 10px;
+  background: var(--cream);
+  position: relative;
+}
+
+.vp-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.vp-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10.5px;
+  line-height: 1.6;
+  color: var(--ink-faded);
+}
+
+/* Philosophy — editorial blockquote */
+.philosophy-block {
+  border-top: 4px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 18px 0 16px;
+  margin: 18px 0;
+  text-align: center;
+}
+
+.phil-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.phil-attr {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 10px;
+}
+
+/* Achievement — advertisement block */
+.ach-ad {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 20px 22px;
+  margin-top: 14px;
+}
+
+.ach-ad-eyebrow {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7.5px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: rgba(244,240,230,0.6);
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(244,240,230,0.2);
+  padding-bottom: 8px;
+}
+
+.ach-ad-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--paper);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.ach-ad-sub {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(244,240,230,0.55);
+  margin-bottom: 12px;
+}
+
+.ach-ad-body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 11px;
+  line-height: 1.7;
+  color: rgba(244,240,230,0.8);
+  font-style: italic;
+}
+
+/* ───────────────────────────────────────────────────────
+   RIGHT ASIDE
+─────────────────────────────────────────────────────── */
+
+/* Skill bars */
+.skill-entry {
+  margin-bottom: 9px;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+.skill-name {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+}
+
+.skill-pct {
+  font-family: 'Playfair Display', serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.skill-track {
+  height: 2px;
+  background: var(--paper-dark);
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  background: var(--ink);
+  position: relative;
+}
+
+.skill-fill::after {
+  content: '';
+  position: absolute;
+  right: -1px; top: -2px;
+  width: 5px; height: 6px;
+  background: var(--red);
+}
+
+/* Tools — typeset list */
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tool-tag {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 3px 8px;
+}
+
+/* Education entries */
+.edu-entry {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--paper-dark);
+}
+
+.edu-entry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-deg {
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.edu-school {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 2px;
+}
+
+.edu-badge {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 7.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-top: 3px;
+}
+
+/* Languages */
+.lang-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--paper-dark);
+}
+
+.lang-entry:last-child { border-bottom: none; }
+
+.lang-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  color: var(--ink-faded);
+  font-style: italic;
+}
+
+.lang-level {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 7.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+/* Interest chips */
+.int-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.int-chip {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 9.5px;
+  font-style: italic;
+  color: var(--ink-faded);
+  border-bottom: 1px solid var(--paper-dark);
+  padding-bottom: 1px;
+}
+
+/* Upskilling */
+.upskill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.us-item {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+  padding-left: 10px;
+  position: relative;
+}
+
+.us-item::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  font-size: 5px;
+  color: var(--red);
+  top: 3px;
+}
+
+/* Sectors — right column pills */
+.sector-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sector-item {
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--paper-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sector-item::before {
+  content: '→';
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px;
+  color: var(--red);
+  font-style: normal;
+}
+
+/* ───────────────────────────────────────────────────────
+   FOOTER — colophon
+─────────────────────────────────────────────────────── */
+.footer-colophon {
+  border-top: 3px double var(--ink);
+  background: var(--cream);
+  padding: 16px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-sig {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-ornament {
+  font-size: 18px;
+  color: var(--ink);
+  letter-spacing: 0.5em;
+  opacity: 0.4;
+}
+
+.footer-tagline {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7.5px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 5px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-year {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.footer-edition {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7.5px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-top: 3px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE RESPONSIVE — Broadsheet adapts to pocket press
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Tablet: 768px and below ── */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+
+  /* Edition strip — center badge, hide flanking text on mobile */
+  .edition-strip {
+    padding: 10px 16px;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .edition-strip .edition-text {
+    display: none;
+  }
+
+  /* Masthead — switch to vertical stack */
+  .masthead {
+    padding: 20px 16px 0;
+  }
+
+  .masthead-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .masthead-left {
+    align-items: center;
+  }
+
+  .masthead-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .masthead-right .issue-label {
+    text-align: center;
+  }
+
+  .contact-list-mast {
+    align-items: center;
+  }
+
+  .name-fraktur {
+    font-size: 54px;
+  }
+
+  /* Kicker bar — 2 columns on tablet */
+  .kicker-bar {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .kicker-seg {
+    flex: 1 1 33%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 7px;
+    padding: 8px 10px;
+  }
+
+  /* Deck section — full collapse, no side rule */
+  .deck-section {
+    display: block;
+    padding: 20px 16px 0;
+  }
+
+  .deck-rule {
+    display: none;
+  }
+
+  .deck-main {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .deck-headline {
+    font-size: 32px;
+  }
+
+  .deck-body {
+    columns: 1;
+  }
+
+  /* KPIs side-by-side, pull quote full-width below */
+  .deck-sidebar {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--ink);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .sidebar-kpi {
+    border-top: none;
+    border-right: 1px solid var(--paper-dark);
+    padding: 14px 16px;
+  }
+
+  .sidebar-kpi:last-of-type {
+    border-right: none;
+  }
+
+  .kpi-num {
+    font-size: 44px;
+  }
+
+  .pull-quote {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid var(--paper-dark);
+    padding: 14px 16px;
+    margin-top: 0;
+    background: var(--cream);
+  }
+
+  .pq-text {
+    font-size: 14px;
+  }
+
+  /* Body grid — single column stack */
+  .body-grid {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+
+  .col-rule {
+    display: none;
+  }
+
+  .left-nav {
+    padding: 20px 16px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .main-feature {
+    padding: 20px 16px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .right-aside {
+    padding: 20px 16px;
+  }
+
+  /* Value props — single column */
+  .vp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-colophon {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+/* ── Mobile: 480px and below ── */
+@media (max-width: 480px) {
+  .edition-strip {
+    padding: 6px 12px;
+  }
+
+  .edition-text {
+    font-size: 7.5px;
+  }
+
+  .masthead {
+    padding: 16px 12px 0;
+  }
+
+  .name-fraktur {
+    font-size: 42px;
+  }
+
+  /* Kicker — 2 per row */
+  .kicker-seg {
+    flex: 1 1 50%;
+    font-size: 6.5px;
+    padding: 7px 8px;
+  }
+
+  .deck-section {
+    padding: 16px 12px 0;
+  }
+
+  .deck-headline {
+    font-size: 26px;
+  }
+
+  .deck-body {
+    font-size: 12px;
+  }
+
+  /* Drop cap on mobile — smaller */
+  .deck-body p:first-child::first-letter {
+    font-size: 48px;
+    margin: 4px 6px 0 0;
+  }
+
+  .deck-sidebar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left-nav,
+  .main-feature,
+  .right-aside {
+    padding: 16px 12px;
+  }
+
+  .exp-header {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .exp-date {
+    font-size: 7px;
+  }
+
+  .exp-role {
+    font-size: 16px;
+  }
+
+  .kpi-num {
+    font-size: 40px;
+  }
+
+  .ach-ad-title {
+    font-size: 20px;
+  }
+
+  .phil-text {
+    font-size: 17px;
+  }
+
+  .footer-colophon {
+    padding: 14px 12px;
+  }
+
+  .footer-sig {
+    font-size: 18px;
+  }
+
+  .footer-year {
+    font-size: 26px;
+  }
+
+  /* Masthead vol — smaller */
+  .masthead-vol {
+    font-size: 12px;
+  }
+}
+
+@media print {
+  body { padding: 0; background: white; }
+  .page { box-shadow: none; width: 100%; max-width: 100%; margin: 0; background-image: none; background: var(--paper); }
+  .edition-strip, .masthead, .footer-colophon { background: var(--cream) !important; -webkit-print-color-adjust: exact; }
+  .kicker-bar { background: var(--ink) !important; -webkit-print-color-adjust: exact; }
+  .ach-ad { background: var(--ink) !important; -webkit-print-color-adjust: exact; }
+  .vp-card, .metric-box { background: var(--cream) !important; -webkit-print-color-adjust: exact; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ░ EDITION BAR ░ -->
+  <div class="edition-strip">
+    <span class="edition-text">Customer Operations &amp; Success · Howrah, India · Curriculum Vitae</span>
+    <span class="edition-price">Open to Offers</span>
+    <span class="edition-text" style="text-align:right;visibility:hidden;">Customer Operations &amp; Success · Howrah, India · Curriculum Vitae</span>
+  </div>
+
+  <!-- ░ MASTHEAD ░ -->
+  <div class="masthead">
+    <div class="masthead-top-rule"></div>
+    <div class="masthead-inner">
+
+      <div class="masthead-left">
+        <div class="issue-label">Presented for Consideration</div>
+        <div class="masthead-vol">
+          Specialising in Customer Support,<br>
+          Operations &amp; Process Excellence
+        </div>
+        <div class="masthead-category" style="margin-top:6px;">
+          3+ Years · Amazon, Ultrahuman &amp; Beyond
+        </div>
+      </div>
+
+      <div class="masthead-name">
+        <span class="name-fraktur">Sharmistha</span>
+        <span class="name-fraktur" style="font-size:56px;display:block;margin-top:-4px;">Palui</span>
+        <span class="name-subtitle">Customer Experience Professional</span>
+      </div>
+
+      <div class="masthead-right">
+        <div class="issue-label" style="text-align:right;">Correspondence</div>
+        <div class="contact-list-mast">
+          <div class="cm-item">📍 Howrah, West Bengal</div>
+          <div class="cm-item">✉ <a href="mailto:rebapalui@gmail.com" style="color:inherit;text-decoration:none;">rebapalui@gmail.com</a></div>
+          <div class="cm-item">☎ +91 99037 42247</div>
+          <div class="cm-item">🔗 linkedin.com/in/sharmistha-palui</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="kicker-bar">
+      <div class="kicker-seg"><strong>3+</strong> Years Front-Line CX</div>
+      <div class="kicker-seg"><strong>100+</strong> Cases Daily</div>
+      <div class="kicker-seg"><strong>90%</strong> Resolution Rate</div>
+      <div class="kicker-seg"><strong>50%</strong> AHT Reduction</div>
+      <div class="kicker-seg"><strong>IIM-B</strong> Analytics</div>
+    </div>
+  </div>
+
+  <!-- ░ DECK / LEDE SECTION ░ -->
+  <div class="deck-section">
+
+    <div class="deck-main">
+      <div class="deck-eyebrow">Editorial Brief · Professional Summary</div>
+      <div class="deck-headline">
+        She Doesn't Just<br>
+        Resolve Cases —<br>
+        <em>She Redesigns Systems.</em>
+      </div>
+      <div class="deck-body">
+        <p>Customer support is not a holding pen for complaints — it is the intelligence nerve of any organisation that chooses to listen. Sharmistha Palui has spent the last three years proving precisely that: first as a Senior Customer Support Associate at Amazon, where she managed 100+ cases daily at ≥90% first-contact resolution; then as a Customer Experience Specialist at Ultrahuman, navigating the clinical sensitivity of health-tech wearable support; and most recently as a City Operations Analyst at Club Feast, diagnosing last-mile delivery failures across live logistics networks.</p>
+        <p>A BA in History, an MA in Journalism in progress, and an IIM-B analytics certificate produce an unusual combination: the discipline to structure an argument, the instinct to find the story within the data, and the rigour to act on what it reveals. This is a professional whose response to an inefficient system was not to absorb the friction, but to eliminate it — earning a Best Achiever Award for a workflow redesign that cut Average Handling Time by 50% and was formally adopted as the team-wide operational standard.</p>
+      </div>
+    </div>
+
+    <div class="col-rule"></div>
+
+    <div class="deck-sidebar">
+
+      <div class="sidebar-kpi">
+        <span class="kpi-num">3+</span>
+        <span class="kpi-label">Years Front-Line Experience</span>
+      </div>
+
+      <div class="sidebar-kpi">
+        <span class="kpi-num">3</span>
+        <span class="kpi-label">Industry Sectors Served</span>
+      </div>
+
+      <div class="pull-quote">
+        <div class="pq-text">"Efficiency is doing things right; effectiveness is doing the right things."</div>
+        <span class="pq-attr">— Peter Drucker · Operating Credo</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ░ BODY GRID ░ -->
+  <div class="body-grid">
+
+    <!-- ═ LEFT COLUMN ═ -->
+    <div class="left-nav">
+
+      <!-- Career Timeline -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Career Record</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-entry">
+            <div class="tl-year">Dec 2024 – Jan 2025</div>
+            <div class="tl-role">City Operations Analyst</div>
+            <div class="tl-org">Club Feast</div>
+          </div>
+          <div class="tl-entry">
+            <div class="tl-year">Jun – Dec 2024</div>
+            <div class="tl-role">Customer Experience Specialist</div>
+            <div class="tl-org">Ultrahuman · Health-Tech Wearables</div>
+          </div>
+          <div class="tl-entry">
+            <div class="tl-year">Sep 2022 – Jun 2024</div>
+            <div class="tl-role">Senior Customer Support Associate</div>
+            <div class="tl-org">Amazon (via Cloudtail India)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">By the Numbers</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="metric-box">
+          <span class="m-num">100+</span>
+          <span class="m-label">Cases Per Day</span>
+        </div>
+        <div class="metric-box">
+          <span class="m-num">≥90%</span>
+          <span class="m-label">Resolution Rate</span>
+        </div>
+        <div class="metric-box">
+          <span class="m-num">−50%</span>
+          <span class="m-label">AHT Reduction</span>
+        </div>
+      </div>
+
+      <!-- Sectors -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Sector Experience</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="sector-list">
+          <div class="sector-item">Enterprise E-Commerce</div>
+          <div class="sector-item">Health &amp; Wearable Tech</div>
+          <div class="sector-item">Food Delivery &amp; Logistics</div>
+          <div class="sector-item">Customer Success</div>
+        </div>
+      </div>
+
+      <!-- Work Ethos -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Character</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="ethos-list">
+          <div class="ethos-item">
+            <div class="ethos-initial">P</div>
+            <div class="ethos-body">
+              <div class="ethos-trait">Process-First</div>
+              <div class="ethos-desc">Every problem is a systems problem in disguise.</div>
+            </div>
+          </div>
+          <div class="ethos-item">
+            <div class="ethos-initial">E</div>
+            <div class="ethos-body">
+              <div class="ethos-trait">Empathy-Led</div>
+              <div class="ethos-desc">Resolution without rapport is just transaction.</div>
+            </div>
+          </div>
+          <div class="ethos-item">
+            <div class="ethos-initial">D</div>
+            <div class="ethos-body">
+              <div class="ethos-trait">Data-Literate</div>
+              <div class="ethos-desc">Structured thinking applied to every insight.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /left-nav -->
+
+    <div class="col-rule"></div>
+
+    <!-- ═ MAIN FEATURE COLUMN ═ -->
+    <div class="main-feature">
+
+      <!-- Experience -->
+      <div class="sec-head">
+        <div class="sec-head-label">Professional Record — In Full</div>
+        <div class="sec-head-rule"></div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div class="exp-role">City Operations Analyst</div>
+          <div class="exp-date">Dec 2024 – Jan 2025</div>
+        </div>
+        <div class="exp-org">Club Feast · Food Delivery &amp; Logistics · Kolkata</div>
+        <ul class="exp-bullets">
+          <li>Monitored real-time delivery KPIs across city clusters — identified operational bottlenecks, delivery anomalies, and fulfilment gaps affecting customer satisfaction.</li>
+          <li>Coordinated with restaurant partners, delivery personnel, and logistics teams to resolve live service failures and minimise order-level complaints.</li>
+          <li>Mapped last-mile customer pain points and escalated patterns to management with data-backed recommendations, contributing to targeted retention improvements.</li>
+          <li>Maintained SLA adherence oversight and flagged systemic failure patterns to operations leadership for structural remediation.</li>
+        </ul>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div class="exp-role">Customer Experience Specialist</div>
+          <div class="exp-date">Jun 2024 – Dec 2024</div>
+        </div>
+        <div class="exp-org">Ultrahuman · Health-Tech Wearables · Remote</div>
+        <ul class="exp-bullets">
+          <li>Delivered empathetic, consultative support for a health-tech wearable — where tone and clinical accuracy carry equal weight, and user anxiety around biometric data demands careful framing.</li>
+          <li>Synthesised recurring user friction points into structured feedback reports delivered to product and marketing teams, directly influencing onboarding content revisions.</li>
+          <li>Adapted communication style dynamically across diverse user profiles — from tech-savvy early adopters to first-time wearable users navigating health data for the first time.</li>
+          <li>Handled sensitive health-data queries with discretion, maintaining brand trust in a regulated consumer category.</li>
+        </ul>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div class="exp-role">Senior Customer Support Associate</div>
+          <div class="exp-date">Sep 2022 – Jun 2024</div>
+        </div>
+        <div class="exp-org">Amazon (via Cloudtail India) · Seller &amp; Buyer Support · Kolkata</div>
+        <ul class="exp-bullets">
+          <li>Managed 100+ seller and buyer interactions daily across voice, chat, and email — maintaining ≥90% first-contact resolution across nearly two years of sustained high-volume throughput.</li>
+          <li>Redesigned personal workflow to achieve a 50% AHT reduction; methodology was formally adopted as the team-wide standard — later recognised with the Best Achiever Award, Q2 2023.</li>
+          <li>Handled complex B2B escalations involving account suspensions, policy violations, and cross-functional disputes — coordinating with fulfilment, compliance, and payments teams to achieve resolution without further escalation.</li>
+          <li>Mentored incoming associates on case-triage frameworks, creating onboarding guides that compressed ramp-up time materially.</li>
+        </ul>
+      </div>
+
+      <!-- The Why — Value Props -->
+      <div style="margin-top:6px;">
+        <div class="sec-head">
+          <div class="sec-head-label">The Case for Hiring · Four Arguments</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="vp-grid">
+          <div class="vp-card">
+            <div class="vp-num">Argument I.</div>
+            <div class="vp-text">2.5+ years at Amazon handling 100+ cases daily at ≥90% resolution — the volume, consistency, and rigour are proven at scale.</div>
+          </div>
+          <div class="vp-card">
+            <div class="vp-num">Argument II.</div>
+            <div class="vp-text">Process builder by instinct — redesigned her own workflow for a 50% efficiency gain that became the team standard, earning formal recognition.</div>
+          </div>
+          <div class="vp-card">
+            <div class="vp-num">Argument III.</div>
+            <div class="vp-text">Cross-sector CX depth: enterprise e-commerce, health-tech wearables, and city-scale food delivery — three distinct operational contexts mastered.</div>
+          </div>
+          <div class="vp-card">
+            <div class="vp-num">Argument IV.</div>
+            <div class="vp-text">IIM-B analytics background brings structured thinking to customer insight — not merely case resolution by reflex, but pattern recognition at scale.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Philosophy -->
+      <div class="philosophy-block">
+        <div class="phil-text">"Efficiency is doing things right;<br>effectiveness is doing the right things."</div>
+        <div class="phil-attr">— Peter Drucker · Core Operating Credo of Sharmistha Palui</div>
+      </div>
+
+      <!-- Achievement -->
+      <div class="sec-head" style="margin-top:2px;">
+        <div class="sec-head-label">Distinction &amp; Recognition</div>
+        <div class="sec-head-rule"></div>
+      </div>
+      <div class="ach-ad">
+        <div class="ach-ad-eyebrow">Best Achiever Award · Q2 2023 · Amazon Customer Operations</div>
+        <div class="ach-ad-title">50% Faster. Adopted Company-Wide.</div>
+        <div class="ach-ad-sub">Personal Workflow Redesign → Team-Wide Standard</div>
+        <div class="ach-ad-body">Recognised for a 50% AHT reduction achieved through personal workflow redesign — a method later formally adopted as the team-wide operational standard. Not merely commended; institutionalised. A model of what individual-level rigour, applied without instruction or mandate, can compound into at organisational scale — and evidence of a professional who builds for replication, not just resolution.</div>
+      </div>
+
+    </div><!-- /main-feature -->
+
+    <div class="col-rule"></div>
+
+    <!-- ═ RIGHT ASIDE COLUMN ═ -->
+    <div class="right-aside">
+
+      <!-- Skills -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Skill Mastery</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Case Resolution</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" style="width:92%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Empathic Communication</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" style="width:88%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Escalation Management</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Cross-func Collaboration</span><span class="skill-pct">82%</span></div><div class="skill-track"><div class="skill-fill" style="width:82%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Process Design</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">VoC Analysis</span><span class="skill-pct">78%</span></div><div class="skill-track"><div class="skill-fill" style="width:78%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Data Reporting</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">KPI Monitoring</span><span class="skill-pct">70%</span></div><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div></div>
+        <div class="skill-entry"><div class="skill-label"><span class="skill-name">Team Mentoring</span><span class="skill-pct">65%</span></div><div class="skill-track"><div class="skill-fill" style="width:65%"></div></div></div>
+      </div>
+
+      <!-- Tools -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Tools of the Trade</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="tools-list">
+          <span class="tool-tag">Seller Central</span>
+          <span class="tool-tag">Zendesk</span>
+          <span class="tool-tag">Freshdesk</span>
+          <span class="tool-tag">Live Chat</span>
+          <span class="tool-tag">Google Sheets</span>
+          <span class="tool-tag">Slack</span>
+          <span class="tool-tag">Notion</span>
+          <span class="tool-tag">MS Office</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Education</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-deg">Data Analytics</div>
+          <div class="edu-school">Metvy · IIM-B Backed · Cohort 26</div>
+          <div class="edu-badge">Jan–Mar 2024 · Certificate</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-deg">MA — Journalism &amp; Mass Comm.</div>
+          <div class="edu-school">Chandigarh University</div>
+          <div class="edu-badge">Jun 2024 – Jul 2026 · In Progress</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-deg">CDMM — Digital Marketing</div>
+          <div class="edu-school">Digital Vidya</div>
+          <div class="edu-badge">Nov 2023–May 2025 · Certified</div>
+        </div>
+        <div class="edu-entry">
+          <div class="edu-deg">BA History (Honours)</div>
+          <div class="edu-school">IGNOU</div>
+          <div class="edu-badge">Completed</div>
+        </div>
+      </div>
+
+      <!-- Currently Upskilling -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Currently Upskilling</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="upskill-list">
+          <div class="us-item">Customer Success Strategy</div>
+          <div class="us-item">CRM Advanced Workflows</div>
+          <div class="us-item">CSAT &amp; NPS Frameworks</div>
+          <div class="us-item">SLA Management</div>
+          <div class="us-item">Operations Automation</div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Languages</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="lang-entry">
+          <span class="lang-name">English</span>
+          <span class="lang-level">Fluent</span>
+        </div>
+        <div class="lang-entry">
+          <span class="lang-name">Bengali</span>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-entry">
+          <span class="lang-name">Hindi</span>
+          <span class="lang-level">Intermediate</span>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div>
+        <div class="sec-head">
+          <div class="sec-head-label">Areas of Interest</div>
+          <div class="sec-head-rule"></div>
+        </div>
+        <div class="int-cloud">
+          <span class="int-chip">Customer Psychology,</span>
+          <span class="int-chip">Process Optimisation,</span>
+          <span class="int-chip">Health &amp; Wellness Tech,</span>
+          <span class="int-chip">Team Enablement,</span>
+          <span class="int-chip">Behavioural Insight,</span>
+          <span class="int-chip">Conflict Resolution,</span>
+          <span class="int-chip">UX &amp; Product Thinking,</span>
+          <span class="int-chip">Data Storytelling,</span>
+          <span class="int-chip">Ops Automation</span>
+        </div>
+      </div>
+
+    </div><!-- /right-aside -->
+
+  </div><!-- /body-grid -->
+
+  <!-- ░ FOOTER COLOPHON ░ -->
+  <div class="footer-colophon">
+    <div class="footer-sig">Sharmistha Palui</div>
+    <div class="footer-center">
+      <div class="footer-ornament">— ✦ —</div>
+      <div class="footer-tagline">Customer Support &amp; Operations · Available Immediately</div>
+    </div>
+    <div class="footer-right">
+      <div class="foot
